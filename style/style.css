@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "mogent";
+    src: url('./Mogent.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'mogent', sans-serif;
+}
+
+.login-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box, .chat-box {
+    border: black solid 1px;
+    border-radius: 7px;
+    box-shadow: black 1px 1px 5px 0 inset;
+    background-color: rgb(202, 202, 202) ;
+    font-size: larger;
+}
+
+
+.chat-zone, .chat-box {
+    height: 80vh;
+    max-height: 80vh;
+    overflow:scroll;
+}
+
+.pseudo {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+.message {
+    padding : 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 0;
+}

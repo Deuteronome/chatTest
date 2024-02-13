@@ -14,7 +14,7 @@ spl_autoload_register(static function(string $fqcn) {
 use Model\Model;
 
 $bdd = new Model();
-$messageList = $bdd->getAllMessages();
+
 $lastId = (int)$bdd->getLastMessageId();
 
 

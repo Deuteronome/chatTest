@@ -9,6 +9,7 @@
     <title>Login</title>
 </head>
 <body class="login-page">
+    <!-- Juste un formulaire centré dans la page - pas d'identification sécurisé, on entre juste un pseudo, le formulaire est directement géré par le controller du chat, - pas de controller dédié à l'identification -->
     <main class="container-fluid">
         <section class="row justify-content-center">
             <div class="col-11 col-lg-8 justify-content-center align-items-center p-4 login-box">

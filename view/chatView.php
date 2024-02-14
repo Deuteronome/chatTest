@@ -10,8 +10,11 @@
     <title>Chat</title>
 </head>
 <body>
+    <!-- deux élement caché pour passer des données au script JS : le nom de l'utilisateur connecté et l'id du dernier message qui on été récupérés dans le controller-->
     <input type="hidden" id="author" value="<?php echo $_SESSION['username'] ?>">
     <input type="hidden" id="lastId" value="<?php echo $lastId ?>">
+
+    <!--tout ce qui est dan la balise nav : composant navbar boostrap légèrement modifié-->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <h1 class="navbar-brand">
@@ -30,6 +33,7 @@
         </div>
     </nav>
 
+    <!-- zone de chat, rien de sorcier, les class bootstrap sont utilisés pour le positionnement avec un petit peu d'ajustement dans le fichier style.css, la zone de chat est vide, l'ajout des messages est géré par le script chat.js-->
     <main class="container-fluid chat-page justify-content-between">
         <section class="row chat-zone justify-content-center mt-4">
             <div class="col-11 chat-box">
